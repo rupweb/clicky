@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/navigation.css'; // Ensure you import the navigation CSS
+import '../styles/navigation.css';
+import '../styles/header.css';
 
-function Header() {
+const Header = ({ score, highScore, message }) => {
   return (
     <nav>
       <div className="nav-group">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/testimonials">Testimonials</Link></li>
+          <li><Link to="/">Clicky Game</Link></li>
         </ul>
+      </div>
+      <div className="nav-group">
+        <div className="theCounter">
+          <div>Score: {score}</div>
+          <div>High Score: {highScore}</div>
+          <div>{message}</div>
+        </div>
       </div>
       <div className="nav-group">
         <ul>

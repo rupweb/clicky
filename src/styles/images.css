@@ -1,5 +1,18 @@
 .column img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px; /* Rounded edges */
-  }  
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Do not stretch the image */
+  object-position: center; /* Center the image */
+  border-radius: 30px; /* Rounded edges */
+}
+
+.character-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  grid-gap: 50px;
+  justify-content: center;
+  margin-top: 40px; /* Add a top margin */
+}
+
+
