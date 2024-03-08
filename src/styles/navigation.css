@@ -1,0 +1,64 @@
+/* Common styles for navigation in header and footer */
+nav {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space between the items */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+  background: #192841; /* Medium blue background */
+  padding: 10px 100px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  }
+
+  /* Style for the navigation link groups (rectangles) */
+.nav-group {
+    display: inline-block;
+    background-color: #192841; /* Medium blue background */
+    border-radius: 30px; /* Rounded edges */
+    border: 2px solid white; /* White edges */
+    margin: 0 5px; /* Spacing between the groups */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Flexbox layout */
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white; /* White text */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 30px; /* Rounded edges */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color */
+    display: inline-block; /* Ensures padding and border-radius are applied */
+  }
+  
+  nav ul li a:before {
+    content: '⚪'; /* Large amber button icon (using a circle as a placeholder) */
+    font-size: 1.5em; /* Larger icon */
+    display: inline-block;
+    vertical-align: middle; /* Aligns icon with text */
+    margin-right: 5px;
+    color: #FFBF00; /* Amber color */
+  }
+  
+  nav ul li a:hover {
+    background-color: purple; /* Green background on hover */
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Additional styling for active link, if needed */
+  nav ul li a.active {
+    border: 2px solid #fff; /* Example: white border for active link */
+  }
+  
+  
